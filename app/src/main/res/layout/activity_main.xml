@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="match_parent"
+        android:layout_height="385dp"
+        android:layout_marginTop="156dp"
+        app:layout_column="0"
+        app:layout_columnSpan="3"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_row="0"
+        app:layout_rowSpan="3"
+        app:srcCompat="@drawable/board" />
+
+    <android.support.v7.widget.GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="409dp"
+        android:layout_height="662dp"
+        android:layout_marginTop="156dp"
+        app:columnCount="3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:rowCount="3">
+
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="98dp"
+            android:layout_height="131dp"
+            android:layout_marginLeft="30dp"
+            android:alpha="0"
+            android:onClick="onTurn"
+            android:tag="0"
+            app:layout_column="0"
+            app:layout_columnSpan="1"
+            app:layout_row="0"
+            app:layout_rowSpan="1"
+            app:srcCompat="@drawable/ct" />
+
+        <ImageView
+            android:id="@+id/imageView14"
+            android:layout_width="98dp"
+            android:layout_height="131dp"
+            android:layout_marginLeft="30dp"
+            android:alpha="0"
+            android:onClick="onTurn"
+            android:tag="1"
+            app:layout_column="1"
+            app:layout_columnSpan="1"
+            app:layout_row="0"
+            app:layout_rowSpan="1"
+            app:srcCompat="@drawable/ct" />
+
+        <ImageView
+            android:id="@+id/imageView15"
+            android:layout_width="98dp"
+            android:layout_height="131dp"
+            android:layout_marginLeft="23dp"
+            android:alpha="0"
+            android:onClick="onTurn"
+            android:tag="2"
+            app:layout_column="2"
+            app:layout_columnSpan="1"
+            app:layout_row="0"
+            app:layout_rowSpan="1"
+            app:srcCompat="@drawable/ct" />
+
+        <ImageView
+            android:id="@+id/imageView16"
+            android:layout_width="98dp"
+            android:layout_height="131dp"
+            android:layout_marginLeft="30dp"
+            android:alpha="0"
+            android:onClick="onTurn"
+            android:tag="3"
+            app:layout_column="0"
+            app:layout_columnSpan="1"
+            app:layout_row="1"
+            app:layout_rowSpan="1"
+            app:srcCompat="@drawable/ct" />
+
+        <ImageView
+            android:id="@+id/imageView17"
+            android:layout_width="98dp"
+            android:layout_height="131dp"
+            android:layout_marginLeft="30dp"
+            android:alpha="0"
+            android:onClick="onTurn"
+            android:tag="4"
+            app:layout_column="1"
+            app:layout_columnSpan="1"
+            app:layout_row="1"
+            app:layout_rowSpan="1"
+            app:srcCompat="@drawable/ct" />
+
+        <ImageView
+            android:id="@+id/imageView18"
+            android:layout_width="98dp"
+            android:layout_height="131dp"
+            android:layout_marginLeft="23dp"
+            android:alpha="0"
+            android:onClick="onTurn"
+            android:tag="5"
+            app:srcCompat="@drawable/ct" />
+
+        <ImageView
+            android:id="@+id/imageView19"
+            android:layout_width="98dp"
+            android:layout_height="131dp"
+            android:layout_marginLeft="30dp"
+            android:alpha="0"
+            android:onClick="onTurn"
+            android:tag="6"
+            app:srcCompat="@drawable/ct" />
+
+        <ImageView
+            android:id="@+id/imageView20"
+            android:layout_width="98dp"
+            android:layout_height="131dp"
+            android:layout_marginLeft="30dp"
+            android:alpha="0"
+            android:onClick="onTurn"
+            android:tag="7"
+            app:srcCompat="@drawable/ct" />
+
+        <ImageView
+            android:id="@+id/imageView21"
+            android:layout_width="98dp"
+            android:layout_height="131dp"
+            android:layout_marginLeft="23dp"
+            android:alpha="0"
+            android:onClick="onTurn"
+            android:tag="8"
+            app:srcCompat="@drawable/ct" />
+
+    </android.support.v7.widget.GridLayout>
+
+    <LinearLayout
+        android:id="@+id/layout2"
+        android:layout_width="221dp"
+        android:layout_height="122dp"
+        android:layout_marginTop="284dp"
+        android:background="@android:color/holo_green_dark"
+        android:backgroundTint="@android:color/holo_green_light"
+        android:backgroundTintMode="multiply"
+        android:orientation="vertical"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/winningText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:layout_gravity="center_horizontal"/>
+
+        <Button
+            android:id="@+id/newGame"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:onClick="playAgain"
+            android:text="Play Again" />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
